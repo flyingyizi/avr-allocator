@@ -1,0 +1,13 @@
+[package]
+name = "avr-allocator"
+version = "0.1.0"
+edition = "2021"
+keywords = ["allocator","avr"]
+
+[dependencies]
+linked_list_allocator ={default-features = false,version = "0.8.11",features = ["const_mut_refs"] }
+
+# set `features = ["device-selected"]` to avoid error message in this crate.
+# it also means at least one device is selected in your app that use this crate.
+avr-device = { version = "0.3",  features = ["device-selected"]}
+

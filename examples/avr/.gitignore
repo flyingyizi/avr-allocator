@@ -1,0 +1,9 @@
+/target
+*.lock
+*.workspace
+*.hex
+*.hex.asm
+*.elf
+*.bin
+*.eep
+*.exe
